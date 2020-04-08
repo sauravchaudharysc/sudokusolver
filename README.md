@@ -50,7 +50,7 @@ Try For another value.<br/>
     }
     return false; //if true is not returned from sucess.
 
-###To check Is Number Valid Or Not
+### To check Is Number Valid Or Not
         
         isPossible
         Here we check if the number is present in column and row or not.

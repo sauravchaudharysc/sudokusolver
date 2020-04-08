@@ -18,7 +18,7 @@ each time we will try to keep a safe number.
 To check if number is already filled traverse the board col row and sub-grid if present return false.
 Try For another value.
 
-Pseudo Code For Sudoky helper
+Pseudo Code For Sudoku helper
 
     Base Case
     Row==9
@@ -50,14 +50,17 @@ Pseudo Code For Sudoky helper
     }
     return false; //if true is not returned from sucess.
 
-isPossible
-
-Here we check if the number is present in column and row or not.If present return false.
-To check in a grid:-
-Assume we are at (4,5)
-X=4 , Y=5
-So to get the starting point of sub-grid:-
-Do integer division
-SX=(X/3)*3
-SY=(Y/3)*3
+To check Is Number Valid Or Not
+        
+        isPossible
+        Here we check if the number is present in column and row or not.
+        The number in column can be done simply by using a iterator and traverse 
+        the row and column .If present return false.
+        To check in a grid:-
+        Assume we are at (4,5)
+        X=4 , Y=5
+        So to get the starting point of sub-grid:-
+        Do integer division
+        SX=(X/3)*3
+        SY=(Y/3)*3
 

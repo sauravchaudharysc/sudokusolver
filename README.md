@@ -1,24 +1,24 @@
 # Sudoku Solver
 ![](sudoku.png)
-##Hi Everyone.
+## Hi Everyone.
 In this project the sudoku solver is designed.
-Algorithm to solve the sudoku(9*9).
-1.Brute Force Approach
+Algorithm to solve the sudoku. (9*9)<br/>
+1.Brute Force Approach<br/>
 We will try to place a number at any cell. We will put a number if and only if
 it isn't repeating in the row or the column or in the sub-grid. So lets put that a number in index (0,0)
 Then make a recursive call . And we have solved the one part of sudoku . Let other be solved by recursion.
 Recursion ja aur baki ka solve tu karke aa :D :D .
 But doing this way at certain point we will realize it cant be done further because it doesnt satisfy the
-condition so we need to backtrack it. So a better approach is backtracking.
-2.Backtracking
+condition so we need to backtrack it. So a better approach is backtracking.<br/>
+2.Backtracking<br/>
 Here also we use recursion but here we create a helper function that return true or false. If the number to
 be placed is the right number then return true no return false. In this case the recursive call is done and
 it will return a true value if the problem is solved . If it return false we will update the value. And
 each time we will try to keep a safe number.
 To check if number is already filled traverse the board col row and sub-grid if present return false.
-Try For another value.
+Try For another value.<br/>
 
-###Pseudo Code For Sudoku helper
+### Pseudo Code For Sudoku helper
 
     Base Case
     Row==9

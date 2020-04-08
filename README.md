@@ -1,6 +1,6 @@
 # Sudoku Solver
-
-Hi Everyone.
+![](sudoku.png)
+##Hi Everyone.
 In this project the sudoku solver is designed.
 Algorithm to solve the sudoku(9*9).
 1.Brute Force Approach
@@ -18,7 +18,7 @@ each time we will try to keep a safe number.
 To check if number is already filled traverse the board col row and sub-grid if present return false.
 Try For another value.
 
-Pseudo Code For Sudoku helper
+###Pseudo Code For Sudoku helper
 
     Base Case
     Row==9
@@ -50,7 +50,7 @@ Pseudo Code For Sudoku helper
     }
     return false; //if true is not returned from sucess.
 
-To check Is Number Valid Or Not
+###To check Is Number Valid Or Not
         
         isPossible
         Here we check if the number is present in column and row or not.
